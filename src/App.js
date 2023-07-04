@@ -6,6 +6,7 @@ import People from "./pages/People";
 import NotFound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom";
 import Paths from "./pages/Paths";
+import PersonDetail from "./pages/PersonDetail";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/People" element={<People />} />
+        <Route path="/People/:id" element={<PersonDetail />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Paths" element={<Paths />} />
         <Route path="*" element={<NotFound />} />
